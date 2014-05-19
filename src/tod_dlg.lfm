@@ -3,16 +3,18 @@ object TODdialog: TTODdialog
   Height = 228
   Top = 201
   Width = 368
+  BorderStyle = bsDialog
   Caption = 'Tips of the Day'
   ClientHeight = 228
   ClientWidth = 368
+  OnCreate = FormCreate
   Position = poDesktopCenter
   LCLVersion = '1.3'
   object Content: TPanel
-    Left = 8
-    Height = 136
+    Left = 16
+    Height = 152
     Top = 8
-    Width = 320
+    Width = 336
     BevelOuter = bvNone
     Caption = 'Content'
     Color = clWindow
@@ -41,11 +43,13 @@ object TODdialog: TTODdialog
       ModalResult = 1
       TabOrder = 0
     end
-    object SpeedButton1: TSpeedButton
-      Left = 13
+    object btnConfigure: TSpeedButton
+      Left = 8
       Height = 22
+      Hint = 'Configure..'
       Top = 8
       Width = 23
+      AllowAllUp = True
       Flat = True
       Glyph.Data = {
         36040000424D3604000000000000360000002800000010000000100000000100
@@ -83,6 +87,19 @@ object TODdialog: TTODdialog
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000
       }
+      GroupIndex = 1
+      OnClick = btnConfigureClick
     end
+  end
+  object Label1: TLabel
+    Left = 131
+    Height = 13
+    Top = 168
+    Width = 221
+    Caption = 'DON''T CHANGE THE COLORS IN DESIGN TIME'
+    Font.Color = clRed
+    ParentColor = False
+    ParentFont = False
+    Visible = False
   end
 end

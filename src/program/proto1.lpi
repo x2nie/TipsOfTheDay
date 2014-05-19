@@ -47,11 +47,11 @@
         <UnitName Value="Unit1"/>
       </Unit1>
       <Unit2>
-        <Filename Value="toddlg.pas"/>
+        <Filename Value="..\tod_dlg.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="TODdialog"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="TODdlg"/>
+        <UnitName Value="tod_dlg"/>
       </Unit2>
     </Units>
   </ProjectOptions>
@@ -63,6 +63,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value=".."/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

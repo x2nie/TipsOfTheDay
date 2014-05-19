@@ -18,13 +18,14 @@ type
     { private declarations }
   public
     { public declarations }
+
   end;
 
 var
   Form1: TForm1;
 
 implementation
-uses TODdlg;
+uses tod_dlg;
 
 {$R *.lfm}
 
@@ -33,6 +34,7 @@ uses TODdlg;
 procedure TForm1.Button1Click(Sender: TObject);
 begin
    TODdialog.ShowModal;
+   Close;//quick end  debugging
 end;
 
 end.
